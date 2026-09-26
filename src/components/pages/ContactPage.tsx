@@ -269,16 +269,18 @@ export function ContactPage() {
             >
               {sidebar.phoneLabel}
             </span>
-            <span
+            <a
+              href={`tel:${CONTACT_INFO.phone}`}
               style={{
                 fontFamily: "'Source Serif 4',serif",
                 fontSize: 20,
                 fontWeight: 500,
                 color: "#262321",
+                textDecoration: "none",
               }}
             >
               {CONTACT_INFO.phone}
-            </span>
+            </a>
           </p>
           <p style={{ margin: 0 }}>
             <span
@@ -294,16 +296,18 @@ export function ContactPage() {
             >
               {sidebar.emailLabel}
             </span>
-            <span
+            <a
+              href={`mailto:${CONTACT_INFO.email}`}
               style={{
                 fontFamily: "'Source Serif 4',serif",
                 fontSize: 17,
                 fontWeight: 500,
                 color: "#262321",
+                textDecoration: "none",
               }}
             >
               {CONTACT_INFO.email}
-            </span>
+            </a>
           </p>
           <img
             src="/images/CBO-logo-brown.png"
